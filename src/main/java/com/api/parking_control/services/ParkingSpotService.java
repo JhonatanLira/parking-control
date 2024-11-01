@@ -33,7 +33,7 @@ public class ParkingSpotService {
     }
 
     public boolean existByApartmentAndBlock(String apartment, String block) {
-        return parkingSpotRepository.existByApartimentAndBlock(apartment, block);
+        return parkingSpotRepository.existsByApartmentAndBlock(apartment, block);
     }
 
     public List<ParkingSpotModel> findAll() {
