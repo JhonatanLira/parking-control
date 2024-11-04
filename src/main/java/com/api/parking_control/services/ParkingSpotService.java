@@ -43,4 +43,10 @@ public class ParkingSpotService {
     public Optional<ParkingSpotModel> findById(UUID id) {
         return parkingSpotRepository.findById(id);
     }
+
+    @Transactional
+    public void delete(Optional<ParkingSpotModel> parkingSpotModelOptional) {
+        parkingSpotRepository.delete(parkingSpotModelOptional.get());
+    }
+
 }
