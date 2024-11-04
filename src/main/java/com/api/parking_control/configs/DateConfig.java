@@ -22,6 +22,7 @@ public class DateConfig {
         module.addSerializer(LOCAL_DATE_TIME_SERIALIZER);
         return new ObjectMapper()
                 .registerModule(module);
+
     }
 
 }
