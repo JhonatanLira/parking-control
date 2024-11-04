@@ -45,8 +45,8 @@ public class ParkingSpotService {
     }
 
     @Transactional
-    public void delete(Optional<ParkingSpotModel> parkingSpotModelOptional) {
-        parkingSpotRepository.delete(parkingSpotModelOptional.get());
+    public void delete(ParkingSpotModel parkingSpotModel) {
+        parkingSpotRepository.delete(parkingSpotModel);
     }
 
 }
